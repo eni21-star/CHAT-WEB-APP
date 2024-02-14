@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./styling/style.css">
+</head>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../snowyyy\ pic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    height: auto;
+    width: auto;
+    max-width: 350px;
+    padding: 25px 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255,255,255);
+    background: transparent;
+    backdrop-filter: blur(7px);
+    border-radius: 14px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .3);
+}
+.input{
+    margin-bottom: 10px;
+}
+.input input{
+    width: 260px;
+    margin-bottom: 10px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid rgba(40, 39, 39, 0.7);
+    border-radius: 10px;
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: rgb(30, 29, 29);
+    
+    padding: 0px 15px;
+    
+}
+.submit{
+    width: 300px;
+    border-radius: 13px;
+    height: 40px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: rgb(35, 36, 36);
+    color: white;
+}
+a{
+    color: rgb(42, 41, 41);
+}
+.header{
+    font-family: poppins;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    color: rgb(27, 27, 28);
+
+}
+p{
+    font-family: poppins;
+    color: rgb(41, 40, 40);
+    font-size: 12px;
+}
+.rem{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.rem input{
+    accent-color: rgb(43, 44, 45);
+}
+.rem label{
+    color: rgb(38, 39, 39);
+    font-family: poppins;
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+}
+.rem a{
+    font-family: poppins;
+    font-size: 12px;
+    color: rgb(57, 57, 58);
+}
+.dntmatch{
+    text-align: left;
+    padding-left: 10px;
+}
+.dontmatch{
+    font-size: 10px;
+    display: none;
+}
+</style>
+<body>
+    <div class="container">
+
+        <h1 class="header">Login</h1>
+
+
+
+        <form action="/login" method="post">
+
+            <div class="input">
+                <input type="text" class="username" name="username" required placeholder="enter your email"><br>
+                <p class="labeluser" id="labeluser"></p>
+
+                <input type="password" class="password" name="password" required placeholder="password">
+            </div>
+            <div class="rem">
+                <div class="remem">
+                    <input type="checkbox" class="checkboxx">
+                    <label for="checkboxx">remember me</label>
+                </div>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button class="submit" type="submit">Login</button>
+        </form>
+
+        <p class="end">Dont have an account?
+            <a href="/register">Register</a>
+        </p>
+    </div>
+
+</body>
+
+</html>
